@@ -1,0 +1,174 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <header class="header">
+        <a href="#home" class="logo">Anderson
+        <span>Conterno</span></a>
+        
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Formação</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+
+    </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Olá!, sou <span>Anderson</span></h1>
+            <h3 class="text-animation">Eu sou um <span></span></h3>
+            <p>Desde meus 16 anos dediquei meus estudos a programação, desenvolvimento web, design e UX/UI. Não há como negar que atualmente uma página na WEB pode transaformar o seu negócio e é por este motivo que sempre me interessei nestes projetos</p>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anderson-conterno-890754269/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/andersonconterno-be"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/beconterno/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://x.com/"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Contrate</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./public/homeimg.jpeg" alt="home-img"/>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Formação</h2>
+        <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                
+                <div class="timeline-date">2021</div>
+                
+                <div class="timeline-content">
+                    <h3>Ensino Médio</h3>
+                    <p>Formado no Colégio Adventista de Cachoeirinha, aluno fidelidade, formado sem recuperção.</p>
+                </div>
+
+            
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                
+                <div class="timeline-date">2022</div>
+                
+                <div class="timeline-content">
+                    <h3>Curso Profissionalizante</h3>
+                    <p>Curso de desenvolvimento WEB na escola OneBitCode, documentado o progresso e desenvolvimento de projetos práticos, focados no mercado de trabalho.</p>
+                </div>
+                
+            
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                
+                <div class="timeline-date">2025</div>
+                
+                <div class="timeline-content">
+                    <h3>Ensino Superior</h3>
+                    <p>Início dos estudos na Faculdade Adventista do Paraná, curso de Redes, afim de aprofundar os conhecimentos para ser um profisioanl completo.</p>
+                </div>
+                
+            
+        </div>
+        </div>
+    </section>
+
+    <section class="service" id="services">
+        <h2 class="heading">Serviços</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>UI Design</h4>
+                    <p>transformo uma ideia funcional em uma interface visualmente agradável, fácil de usar e que comunique bem com o usuário, focado na aparência e na interação visual do sistema.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Desenvolvimento WEB</h4>
+                    <p>Construo as "engrenagens" e a "fachada" de sites e sistemas web, garantindo que funcionem bem, sejam rápidos, seguros e atendam às necessidades dos usuários.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>QA Testing</h4>
+                    <p>Garanto a qualidade do sistema, com o papel de encontrar falhas antes dos usuários, garantindo que o software seja confiável, funcional e pronto para uso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Entre em Contato <span>Comigo</span></h2>
+
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Nome Completo"/>
+                        <input type="email" placeholder="Email"/> 
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Telefone"/>
+                        <input type="text" placeholder="Assunto"/>
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Send Message" class="btn"/>
+                </div>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/anderson-conterno-890754269/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/andersonconterno-be"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/beconterno/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://x.com/"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            &copy; Anderson Conterno | Todos os Direitos Reservados
+        </p>
+    </footer>
+    
+    <script src="/script.js"></script>
+
+    </>
+  )
+}
+
+export default App
